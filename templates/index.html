@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Kelompok</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Perkenalan Kelompok Menggunakan Flask</h1>
+        <p>Selamat datang di halaman perkenalan kelompok kami.</p>
+        <div class="card" onclick="cardclick('5200411081')">
+          <img src="https://sia.uty.ac.id/fotokecil/5200411081.jpg" alt="Foto Anggota 1">
+          <h2>Muhammad taufik ifannur</h2>
+          <h3>5200411081</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel molestiae perspiciatis dolorem officiis laudantium inventore voluptas amet, quo totam itaque quidem quibusdam nisi repellendus neque eveniet fuga perferendis rerum.</p>
+        </div>
+        <div class="card" onclick="cardclick('5200411078')">
+            <img src="https://sia.uty.ac.id/fotokecil/5200411078.jpg" alt="Foto Anggota 2">
+            <h2>Ade Apriadi</h2>
+            <h3>5200411097</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel molestiae perspiciatis dolorem officiis laudantium inventore voluptas amet, quo totam itaque quidem quibusdam nisi repellendus neque eveniet fuga perferendis rerum.</p>
+          </div>
+          <div class="card" onclick="cardclick('5200411098')">
+            <img src="https://sia.uty.ac.id/fotokecil/5200411098.JPG" alt="Foto Anggota 3">
+            <h2>Tofiq Nur Hidayat</h2>
+            <h3>5200411098</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel molestiae perspiciatis dolorem officiis laudantium inventore voluptas amet, quo totam itaque quidem quibusdam nisi repellendus neque eveniet fuga perferendis rerum.</p>
+          </div>
+          <div class="card" onclick="cardclick('5200411117')">
+            <img src="{{ url_for('static', filename='img/foto dwiki.jpg') }}" alt="Foto Anggota 4">
+            <h2>Dwiki Baskoro Pamungkas</h2>
+            <h3>5200411117</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel molestiae perspiciatis dolorem officiis laudantium inventore voluptas amet, quo totam itaque quidem quibusdam nisi repellendus neque eveniet fuga perferendis rerum.</p>
+          </div>
+      </div>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>
